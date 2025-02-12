@@ -1,0 +1,12 @@
+class Solution {
+    public int mostWordsFound(String[] s) {
+        int max=0;
+        for(String ch:s){
+            int chlen=ch.split(" ").length;
+            if(max<chlen){
+                max=chlen;
+            }
+        }
+        return max;
+}}
+
